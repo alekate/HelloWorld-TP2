@@ -9,3 +9,10 @@ body{
 background-color:rgb(165, 165, 207);
 
 }
+
+.card {
+
+    margin-left: auto ;
+    margin-right: auto ;
+
+}
