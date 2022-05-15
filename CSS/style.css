@@ -17,7 +17,9 @@ background-color:rgb(165, 165, 207);
 
 }
 body{
-    background-image: url("https://64.media.tumblr.com/123384227fc452ff6d6907914ca24070/tumblr_oj6r508pIb1w0qeejo1_540.gifv");
+    background-image: url("https://i.pinimg.com/originals/5e/08/26/5e082629284c53812f68e322b6111133.gif");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    color:rgb(255, 255, 255);
+}

@@ -115,7 +115,7 @@
     <button onclick="func_ej2()">sumar</button>
 
     <label for="ej2_respuesta">Resultado</label>
-    <input type="text" id="ej2_respuesta">
+    <input type="number" id="ej2_respuesta">
 
     <script>
         function func_ej2(){
@@ -166,6 +166,37 @@
 <h1>Ejercicio 5</h1>
 <h2>5. Ingresar una palabra y mostrar: PALABRA tiene n letras.</h2>
 
+<h1>Ejercicio 6</h1>
+<h2>6. Ingresar un número e indicar si es par.</h2>
+
+<lable for="ej6_i1">Numero</lable>
+<input type="number" id="ej6_i1">
+
+<button onclick="func_ej6()">ejecutar</button>
+
+<label for="ej6_respuesta">Resultado</label>
+<input type="text" id="ej6_respuesta">
+
+<script> 
+
+function func_ej6(){
+
+    let n1 = parseInt (document.getElementById('ej6_i1').value)
+    let n2 = (document.getElementById('ej6_respuesta').value)
+
+if (n1 % 2 === 0){
+    
+    n2="par"
+
+}else{
+
+    n2="impar"
+}
+
+document.getElementById("ej6_respuesta").value = n2
+
+}
+</script>
 
 
 </body>
