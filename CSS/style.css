@@ -5,9 +5,11 @@ img{
     width=50% ;
 }   
 body{
-
-background-color:rgb(165, 165, 207);
-
+    background-image: url("https://i.pinimg.com/originals/5e/08/26/5e082629284c53812f68e322b6111133.gif");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color:rgb(255, 255, 255);
 }
 
 .card {
@@ -15,11 +17,4 @@ background-color:rgb(165, 165, 207);
     margin-left: auto ;
     margin-right: auto ;
 
-}
-body{
-    background-image: url("https://i.pinimg.com/originals/5e/08/26/5e082629284c53812f68e322b6111133.gif");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    color:rgb(255, 255, 255);
 }
