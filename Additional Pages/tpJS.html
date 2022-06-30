@@ -310,30 +310,38 @@ document.getElementById("ej6_respuesta").value = n2
 <h3>Ejercicio 8</h3>
 <h4>8.Mostrar los números primos hasta un número ingresado por el usuario.</h4>
 
-<label for= "ej8_i1">Número a ingresar</label>
-<input type="number" id="ej8_i1">
 
-<button onclick="func_ej8(ej8_i1)">Calcular</button>
+<input placeholder="Escriba un numero" type="number" id="ejercicio8Num">
+      
+<button type="button" onclick="ejercicio8()">calcular</button>
+
+<p id="ejercicio8Resultado"></p>
+    
 
 <script>
-  function func_EJ8(){
-     const num1 = parseInt(document.getElementById("EJ8_N1").value);
-     const resultado = document.getElementById("EJ8_R1");
+function ejercicio8(){
 
-     const esPrimo = (num) => {
-         for (let i = 2; i < num; i++) {
-             if (num % i === 0) {
-              return false;
-             }
-            return true;
-         }
-     }
-     for (let x = 0; x <= num1; x++) {
-         esPrimo(x) && (resultado.textContent = resultado.innerHTML + " | " + x);
+    const num1 = parseInt(document.getElementById("ejercicio8Num").value);
+    const resultado = document.getElementById("ejercicio8Resultado");
+  
+    const esPrimo = (num) => {
+      for (let i = 2; i < num; i++) {
+        
+        if (num % i === 0) {
+          return false;
         }
-    }
 
- </script>
+        return true;
+
+      }
+    }
+    
+    for (let x = 0; x <= num1; x++) {
+      esPrimo(x) && (resultado.textContent = resultado.innerHTML + " | " + x);
+    }
+}
+
+</script>
 
 <h3>Ejercicio 9</h3>
 <h4>9.Ingresar un nombre, un apellido, una edad y un ciudad de nacimiento,  crear un párrafo y completar la siguiente frase:
